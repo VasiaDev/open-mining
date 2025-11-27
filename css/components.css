@@ -1,0 +1,12 @@
+/* ===== login (btn) ===== */
+.button-login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(160px, 12.08vw, 232px);
+    height: clamp(44px, 3.33vw, 64px);
+    border-radius: 4px;
+    background-color: #87B645;
+    font-size: clamp(16px, 1.25vw, 24px);
+    color: #FFFFFF;
+}
