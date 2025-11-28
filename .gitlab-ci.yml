@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+deploy_to_ftp:
+  stage: deploy
+  image: ubuntu:latest
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y lftp
+  script:
+    - lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST; mirror -R ./ /htdocs --ignore-time --parallel=2 --delete"
+  only:
+    - main
