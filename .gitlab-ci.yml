@@ -9,5 +9,5 @@ deploy_to_ftp:
     - apt-get install -y lftp
   script:
     - lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST; mirror -R ./ /htdocs --ignore-time --parallel=2 --delete"
-  only:
-    - main
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
