@@ -8,5 +8,30 @@
     border-radius: 4px;
     background-color: #87B645;
     font-size: clamp(16px, 1.25vw, 24px);
+    font-weight: 400;
     color: #FFFFFF;
+}
+
+/* ===== Hero (btns) ===== */
+.hero .buttons {
+    display: flex;
+    margin: 0 auto;
+}
+
+.hero .buttons .btn-primary {
+    background-color: #87B645;
+    color: #FFFFFF;
+    border-radius: 4px;
+    width: clamp(232px, 13.96vw, 268px);
+    padding: 14px clamp(16px, 12.7vw, 18.48px);
+    margin: 57px 27px;
+}
+
+.hero .buttons .btn-secondary {
+    border: solid 1px #A0C4FA;
+    border-radius: 4px;
+    color: #333333;
+    width: clamp(224px, 12.5vw, 240px);
+    padding: 14px clamp(15px, 12.7vw, 16.55px);
+    margin: 57px 27px;
 }
