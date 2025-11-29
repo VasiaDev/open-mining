@@ -24,7 +24,7 @@ header {
     gap: clamp(24px, 5vw, 96px);
 }
 
-/* ===== Hero ===== */
+/* ===== Hero Section ===== */
 .hero {
     position: relative;
     display: flex;
@@ -94,4 +94,90 @@ header {
 .hero .rpl {
     top: clamp(213px, 22.27vw, 427.54px);
     left: clamp(701px, 73.05vw, 1402.18px);
+}
+
+/* ===== Product Info ===== */
+.product-info {
+    position: relative;
+}
+
+.product-info .computer {
+    margin: clamp(24px, 1.7vw, 32px);
+    padding-left: clamp(1px, 7.5vw, 106px);
+}
+
+.product-info .preview-info {
+    display: flex;
+    position: relative;
+    width: 1760px;
+}
+
+.product-info .preview-info div {
+    position: absolute;
+    padding-left: clamp(32px, 63.3vw, 1216px);
+    top: 300px;
+    
+}
+
+.product-info .preview-info div h2 {
+    color: #1BAAD1;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.product-info .preview-info div p {
+    color: #333333;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+
+.product-info .spot-1 {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    z-index: -1;
+}
+
+/* ===== Benefits ===== */
+.benefits {
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(96px, 5.83vw, 112px);
+}
+
+.benefits .benefit-card {
+    width: clamp(296px, 21.7vw, 416px);
+    height: clamp(425px, 28.75vw, 552px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: solid 1px #D7D7D7;
+    border-radius: 24px;
+}
+
+.benefits .benefit-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    width: 238px;
+}
+
+.benefits .benefit-card p {
+    font-size: clamp(14px, 0.94vw, 18px);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin-bottom: 24px;
+    width: 289px;
+}
+
+.benefits .arrow {
+    margin: 24px;
+}
+
+.benefits .benefit-card:nth-of-type(2) {
+    margin-top: -24px;
 }

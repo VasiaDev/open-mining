@@ -48,6 +48,12 @@ pre {
     margin: 0;
 }
 
+/* ===== General ===== */
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
 /* ===== Fonts ===== */
 @font-face {
     font-family: 'Gotham Pro';
