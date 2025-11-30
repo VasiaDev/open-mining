@@ -6,7 +6,6 @@ header {
     margin-top: clamp(16px, 2.5vw, 48px);
     padding-left: clamp(24px, 4vw, 76px);
     padding-right: clamp(24px, 4vw, 80px);
-    font-family: 'Gotham Pro';
     font-weight: normal;
     font-style: normal;
     font-size: clamp(16px, 1.25vw, 24px);
@@ -34,7 +33,6 @@ header {
     padding-top: clamp(100px, 13.75vw, 144px);
     padding-left: clamp(200px, 28.2vw, 542px);
     padding-right: clamp(200px, 28.2vw, 542px);
-    font-family: 'Gotham Pro';
     text-align: center;
 }
 
@@ -299,4 +297,97 @@ header {
 
 .cloud-mining-advantages .comparison .item.adv .left-part {
     background-color: #87B645;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Footer ===== */
+footer {
+    position: relative;
+    margin-top: 176px;
+    padding-left: clamp(24px, 3.96vw, 76px);
+    padding-right: clamp(8px, 5vw, 97px);
+    font-weight: normal;
+    font-style: normal;
+    font-size: clamp(16px, 1.25vw, 24px);
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+footer .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 170px;
+    height: 72px;
+}
+
+footer .navigation {
+    display: flex;
+    gap: 146px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.media {
+    display: flex;
+    gap: 87px;
+    margin-left: 100px;
+}
+
+footer .bottom-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    font-size: clamp(10px, 1.25vw, 18px);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 56px;
+}
+
+footer .bottom-footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 39px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #A1A1A3;
+    margin-bottom: 8px;
+}
+
+.bg-footer {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg-footer.left {
+    left: 0;
+}
+
+.bg-footer.right {
+    right: 0;
 }
