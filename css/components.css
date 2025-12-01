@@ -35,3 +35,130 @@
     padding: 14px clamp(15px, 12.7vw, 16.55px);
     margin: 57px 27px;
 }
+
+/* ===== Burger menu ===== */
+.burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .burger svg {
+        width: 40px;
+        height: 120px;
+    }
+}
+
+.burger rect {
+    fill: #87B645;
+    height: 3px;
+}
+
+/* ===== Burger menu (behavior) ===== */
+.no-scroll {
+    overflow: hidden;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-nav.show {
+    display: block;
+}
+
+.header-nav,
+.login {
+    display: flex;
+}
+
+.burger {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav,
+    .login {
+        display: none;
+    }
+
+    .header-nav.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login.show {
+        display: block;
+    }
+}
+
+/* ===== Burger menu (mobile overlay) ===== */
+@media (max-width: 768px) {
+    .header-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #F5F5F5;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+    }
+
+    .header-nav.show {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .header-nav.show + .login,
+    .login.show {
+        position: fixed;
+        top: clamp(20%, 30px, 40%);
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: block;
+        z-index: 2;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+}
+
+/* ===== Burger menu (cross) ===== */
+.burger svg rect {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+.burger.active .line1 {
+    transform: translateY(7px) rotate(45deg);
+    width: 18.5px;
+    x: 0.5px;
+}
+
+.burger.active .line2 {
+    opacity: 0;
+}
+
+.burger.active .line3 {
+    transform: translateY(-7px) rotate(-45deg);
+    width: 18.5px;
+    x: -0.5px;
+}
