@@ -69,32 +69,38 @@ header {
     height: clamp(199px, 21vw, 402px);
     top: 140px;
     left: 4.96px;
+    z-index: -2;
 }
 
 .hero .gpraph-2 {
     width: clamp(932px, 100vw, 1920px);
     height: clamp(200px, 20.8vw, 400px);
     top: 285px;
+    z-index: -2;
 }
 
 .hero .eth {
     top: clamp(60px, 6.35vw, 122px);
     left: clamp(100px, 11.15vw, 214px);
+    z-index: -1;
 }
 
 .hero .fct {
     top: clamp(170px, 17.9vw, 344px);
     left: clamp(230px, 23.75vw, 456px);
+    z-index: -1;
 }
 
 .hero .btc {
     top: clamp(30px, 3.02vw, 58px);
     left: clamp(1000px, 70vw, 1344px);
+    z-index: -1;
 }
 
 .hero .rpl {
     top: clamp(213px, 22.27vw, 427.54px);
     left: clamp(701px, 73.05vw, 1402.18px);
+    z-index: -1;
 }
 
 /* ===== Product Info ===== */

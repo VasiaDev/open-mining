@@ -1,0 +1,47 @@
+/* ===== Hero Section ===== */
+@media (max-width: 1280px) {
+    .hero .btc {
+        top: clamp(30px, 3.02vw, 58px);
+        left: clamp(800px, 70vw, 1000px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding-left: clamp(0px, 14.04vw, 271px);
+        padding-right: clamp(0px, 14.04vw, 271px);
+        align-items: center;
+    }
+    .hero .buttons {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero .buttons .btn-primary {
+        margin-bottom: 10px;
+    }
+
+    .hero .buttons .btn-secondary {
+        margin-top: 10px;
+    }
+
+    .hero .btc {
+        top: clamp(30px, 3.02vw, 58px);
+        left: clamp(600px, 25vw, 800px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .btc {
+        top: clamp(30px, 3.02vw, 58px);
+        left: clamp(380px, 10vw, 600px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero p {
+        width: clamp(100px, 51vw, 245px);
+    }
+}
